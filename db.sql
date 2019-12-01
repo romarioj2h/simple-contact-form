@@ -1,0 +1,9 @@
+CREATE SCHEMA `contact`;
+
+CREATE TABLE IF NOT EXISTS `contact`.`contact` (
+  `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `subject` VARCHAR(255) NOT NULL,
+  `email` VARCHAR(255) NOT NULL,
+  `message` TEXT NOT NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB;
